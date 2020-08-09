@@ -12,9 +12,12 @@ body {
   min-height: 100vh;
 }
 
+/* Heading-styling */
 #heading {
  color: rgb(211, 202, 186);
 }
+
+/* Styling-app component */
 .App {
   display: flex;
   flex-direction: column;
@@ -22,6 +25,7 @@ body {
   text-align: center;
 }
 
+/* dropdown-styling */
 .dropdown-div {
   margin-top: 40px;
 }
@@ -43,6 +47,7 @@ body {
   font-style: oblique;
 }
 
+/* tooltip-button styling */
 .tooltip-button {
   padding: 10px;
   margin-top: 60px;

@@ -1,9 +1,20 @@
 import React from 'react';
 
 const Tooltip = (props) => {
+  const { onMouseIn, onMouseOut, hover } = props;
+  const styleToolTip = {
+    display: hover ? 'block' : 'none'
+  }
   return (
     <div className="tooltip-div">
-      <button className="tooltip-button">Hover Over Me</button>
+      <button
+        className="tooltip-button"
+        onMouseOver={() => onMouseIn()}
+        onMouseOut={() => onMouseOut()}
+      >
+        Hover Over Me
+      </button>
+      <div style={styleToolTip}> Who are You? </div>
     </div>
   );
 };

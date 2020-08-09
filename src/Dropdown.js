@@ -1,9 +1,10 @@
 import React from 'react';
 
+// Dropdown Component to select direction
 const Dropdown = (props) => {
   return (
     <div className="dropdown-div">
-      <label for="direction" id="label">Choose a direction:</label>
+      <label  id="label">Choose a direction:</label>
 
       <select name="directions" id="direction" className="drop-down">
         <option value="top">Top</option>
