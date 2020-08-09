@@ -1,7 +1,6 @@
 
 ## ToolTip-React
 A basic tooltip build using HTML, CSS, ReactJS
-<hr>
 
 ### Deployed at:
  https://sarvess.github.io/Tooltip-React/
@@ -11,9 +10,9 @@ A basic tooltip build using HTML, CSS, ReactJS
 1. Clone this project
 2. Navigate to the project directory
 3. Install Node and npm 
-4. Run following commands to run app:
-  <p>`npm install`</p>
-  <p>`npm start`</p>
+4. Run following commands to run app: <br>
+   `npm install` <br>
+   `npm start`
 5. Choose any direction and hover over Hover over me div to see results.
 
 ### Basic Features
