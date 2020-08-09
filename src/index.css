@@ -5,4 +5,53 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:rgb(96, 79, 79);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#heading {
+ color: rgb(211, 202, 186);
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.dropdown-div {
+  margin-top: 40px;
+}
+
+#label {
+  color: rgb(192, 200, 208);
+  font-weight: 800;
+  font-size: 20px;
+}
+.drop-down {
+  margin: 5px;
+  padding: 8px;
+  width: 100px;
+  height:auto;
+  background-color:rgb(29, 29, 64);
+  color: rgb(206, 173, 173);
+  font-size: 14px;
+  font-family: sans-serif;
+  font-style: oblique;
+}
+
+.tooltip-button {
+  padding: 10px;
+  margin-top: 60px;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(155, 155, 201);
+  cursor: pointer;
+  color: rgb(25, 25, 24);
+  font-size: 15px; 
+  border: 1px solid white;
+  border-radius: 5px;
 }
