@@ -6,11 +6,25 @@ import Tooltip from './ToolTip';
 class App extends React.Component {
   constructor() {
     super();
+    // state to get direction and hover results
     this.state = {
       hover: false,
       direction: 'top',
     };
+
+    // refrence to dropdown
+    this.dropdown = React.createRef();
   }
+
+  // function to change direction state according to dropdown value
+  handleSelectDirection = () => {
+    console.log('direction changed');
+    this.setState({
+      direction: this.dropdown.current.value
+    })
+  }
+
+  // functions to change hover state 
   handleMouseIn = () => {
     console.log('hovered in');
     this.setState({ hover: true });
@@ -26,8 +40,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <h2 id="heading">Test The ToolTip</h2>
-        <Dropdown />
+        <Dropdown
+          ref={this.dropdown}
+          onSelectDirection={this.handleSelectDirection}
+        />
         <Tooltip
+          direction={direction}
           hover={hover}
           onMouseIn={this.handleMouseIn}
           onMouseOut={this.handleMouseOut}

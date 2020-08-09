@@ -3,7 +3,7 @@ import React from 'react';
 const Tooltip = (props) => {
   const { onMouseIn, onMouseOut, hover } = props;
   const styleToolTip = {
-    display: hover ? 'block' : 'none'
+    display: hover ? 'block' : 'none'    
   }
   return (
     <div className="tooltip-div">
@@ -14,7 +14,7 @@ const Tooltip = (props) => {
       >
         Hover Over Me
       </button>
-      <div style={styleToolTip}> Who are You? </div>
+      <div> Who are You? </div>
     </div>
   );
 };
