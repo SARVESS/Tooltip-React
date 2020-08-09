@@ -12,7 +12,7 @@ const Dropdown = (props) => {
         id="direction"
         className="drop-down"
         ref={dropdown}
-        onChange={onSelectDirection}
+        onChange={() => onSelectDirection()}
       >
         <option value="top">Top</option>
         <option value="bottom">Bottom</option>

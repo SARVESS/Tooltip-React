@@ -39,9 +39,9 @@ class App extends React.Component {
     const { direction, hover } = this.state;
     return (
       <div className="App">
-        <h2 id="heading">Test The ToolTip</h2>
+        <h1 id="heading"> The ToolTip</h1>
         <Dropdown
-          ref={this.dropdown}
+          dropdown={this.dropdown}
           onSelectDirection={this.handleSelectDirection}
         />
         <Tooltip

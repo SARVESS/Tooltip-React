@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(96, 79, 79);
+  background-color:rgb(144, 124, 124);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,8 @@ body {
 
 /* Heading-styling */
 #heading {
- color: rgb(211, 202, 186);
+ color: rgb(14, 13, 13);
+ text-decoration: underline;
 }
 
 /* Styling-app component */
@@ -31,8 +32,8 @@ body {
 }
 
 #label {
-  color: rgb(192, 200, 208);
-  font-weight: 800;
+  color: rgb(15, 16, 17);
+  font-weight: 600;
   font-size: 20px;
 }
 .drop-down {
@@ -41,22 +42,44 @@ body {
   width: 100px;
   height:auto;
   background-color:rgb(29, 29, 64);
-  color: rgb(206, 173, 173);
+  color: rgb(243, 230, 230);
   font-size: 14px;
   font-family: sans-serif;
   font-style: oblique;
 }
 
-/* tooltip-button styling */
-.tooltip-button {
-  padding: 10px;
-  margin-top: 60px;
+/* tooltip-styling */
+
+.tooltip {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 150px;
-  height: 50px;
-  background-color: rgb(155, 155, 201);
-  cursor: pointer;
-  color: rgb(25, 25, 24);
-  font-size: 15px; 
-  border: 1px solid white;
+  height: 40px;
+  background-color: rgb(128, 128, 159);
+  margin-top: 60px;
   border-radius: 5px;
+  color: #fff;
+  border:1px solid white;
+  cursor: pointer;
 }
+
+.tooltip:hover {
+   background-color: rgb(19, 19, 78);
+}
+
+/* styling tooltip text */
+.tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
