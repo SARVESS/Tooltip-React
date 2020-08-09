@@ -11,10 +11,10 @@ A basic tooltip build using HTML, CSS, ReactJS
 1. Clone this project
 2. Navigate to the project directory
 3. Install Node and npm 
-4. Run following command to run app:
-`npm install`
-`npm start`
-5. Choose any direction and hover over Hover Over Me div to see results.
+4. Run following commands to run app:
+  <p>`npm install`</p>
+  <p>`npm start`</p>
+5. Choose any direction and hover over Hover over me div to see results.
 
 ### Basic Features
 
